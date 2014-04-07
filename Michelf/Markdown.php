@@ -770,7 +770,7 @@ class Markdown implements MarkdownInterface {
 			return $matches[0];
 		
 		$level = $matches[2]{0} == '=' ? 1 : 2;
-		$block = "<h$level id='$this->runSpanGamut($matches[1])'>".$this->runSpanGamut($matches[1])."</h$level>";
+		$block = "<h$level>".$this->runSpanGamut($matches[1])."</h$level>";
 		return "\n" . $this->hashBlock($block) . "\n\n";
 	}
 	protected function _doHeaders_callback_atx($matches) {
