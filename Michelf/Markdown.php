@@ -933,7 +933,7 @@ class Markdown implements MarkdownInterface {
 			$item = $this->runSpanGamut($item);
 		}
 
-		return "<li>" . $item . "</li>\n";
+		return '<li class="square-list">' . $item . "</li>\n";
 	}
 
 
